@@ -225,6 +225,9 @@ class GrocyChoresCardWithPoints extends LitElement {
                         ${this.show_create_task ? this._renderAddTaskButton() : nothing}
                     </h1>
                     ${this.show_create_task ? this._renderAddTask() : nothing}
+                    <div>
+                        ${this._renderTests(this.test)}
+                    </div>
                     <div class="card-content">
                         ${this._renderItems(this.items)}
                     </div>
@@ -268,6 +271,22 @@ class GrocyChoresCardWithPoints extends LitElement {
                         </div>
                     </ha-button>
                 </div>
+            </div>
+        `
+    }
+
+    _renderTests(testCollection){
+        if (testCollection && testCollection.length > 0) {
+            return html`
+                ${testCollection.map(item => this._renderTest(item))}
+            `
+        }
+    }
+
+    _renderTest(testname){
+        return html`
+            <div class="primary">
+                ${testname}
             </div>
         `
     }
@@ -832,6 +851,7 @@ class GrocyChoresCardWithPoints extends LitElement {
         if(this.show_description) {
             this.description_max_length = this.config.description_max_length ?? null;
         }
+        this.test = this.config.test;
     }
 
 
