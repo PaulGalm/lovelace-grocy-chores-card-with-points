@@ -70,7 +70,7 @@ class GrocyChoresCard extends LitElement {
             }
         }
 
-        this.header = this.config.title == null ? "Todo" : this.config.title;
+        this.header = this.config.title == null ? "Custom Todo" : this.config.title;
 
         this._configSetup();
 
@@ -167,7 +167,7 @@ class GrocyChoresCard extends LitElement {
     static getStubConfig() {
         return {
             entity: ["sensor.grocy_chores", "sensor.grocy_tasks"],
-            title: "Todo",
+            title: "Custom Todo",
             show_quantity: 5,
             show_assigned: true,
             show_overflow: true,
