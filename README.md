@@ -225,6 +225,4 @@ git remote add upstream https://github.com/isabellaalstrom/lovelace-grocy-chores
 7. Push the changes back to your GitHub origin, and open a pull request if you want to contribute them to the main repository.
 ---
 
-Like my work and want to say thanks? Do it here:
-
-<a href="https://www.buymeacoffee.com/iq1f96D" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+If you like it, send the original Author a Coffee [here](https://github.com/isabellaalstrom/lovelace-grocy-chores-card)
