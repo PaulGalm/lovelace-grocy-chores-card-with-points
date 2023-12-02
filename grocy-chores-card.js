@@ -687,6 +687,9 @@ class GrocyChoresCard extends LitElement {
         this._hass.callService("grocy", "execute_chore", {
             chore_id: choreId, done_by: this._getUserId()
         });
+        this._hass.callService("counter", "increment", {
+            entity_id: "counter.testcounter"
+        });
         this._showTrackedToast(choreName);
     }
 
