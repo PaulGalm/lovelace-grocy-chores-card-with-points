@@ -19,7 +19,7 @@ For manual installation see [this guide](https://github.com/thomasloven/hass-con
 ```yaml
 title: My awesome Lovelace config
 resources:
-  - url: /local/grocy-chores-card.js
+  - url: /local/grocy-chores-card-with-points.js
     type: js
 views:
   title: My view
@@ -220,7 +220,7 @@ git remote add upstream https://github.com/isabellaalstrom/lovelace-grocy-chores
 ```
 3. Once the repository is setup, install the npm dependencies with `npm install`
 4. Make local edits as needed to the grocy chores card. 
-5. To test changes, run `npm run build`. This will create a compiled version of the card in `output/grocy-chores-card.js`.
+5. To test changes, run `npm run build`. This will create a compiled version of the card in `output/grocy-chores-card-with-points.js`.
 6. Copy the compiled card in the `output/` folder to your Home Assistant installation and update the dashboard resources to point to it. Make sure the cache is cleared each time you try updating with new changes.
 7. Push the changes back to your GitHub origin, and open a pull request if you want to contribute them to the main repository.
 ---

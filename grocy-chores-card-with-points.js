@@ -2,7 +2,7 @@ import {html, LitElement, nothing} from "lit";
 import {DateTime} from "luxon";
 import style from './style.js';
 
-class GrocyChoresCard extends LitElement {
+class GrocyChoresCardWithPoints extends LitElement {
 
     async loadCustomCreateTaskElements() {
         if(!customElements.get("ha-date-input") || !customElements.get("ha-textfield")) {
@@ -863,4 +863,4 @@ window.customCards.push({
     documentationURL: 'https://github.com/isabellaalstrom/lovelace-grocy-chores-card'
 });
 
-customElements.define('grocy-chores-card-with-points', GrocyChoresCard);
+customElements.define('grocy-chores-card-with-points', GrocyChoresCardWithPoints);
